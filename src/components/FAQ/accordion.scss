@@ -1,0 +1,57 @@
+.accardion {
+  margin-top: 2%;
+  .accordion-item {
+    margin: 0;
+    .accordion-title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5%;
+      cursor: pointer;
+      transition: opacity 5s ease;
+      .title {
+        color: #121212;
+        font-family: "Roboto";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        transition: opacity 0.5s ease;
+        line-height: normal;
+        padding-top: 12px;
+      }
+      .title:active {
+        transform: scale(1.05);
+      }
+      .plus {
+        .img {
+          height: 30px;
+          width: 30px;
+        }
+        .img:active {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .stripes {
+      margin-bottom: 1.5%;
+      background-color: #5f2a2a;
+      height: 1.5px;
+    }
+    .accordion-item.active .accordion-content.active {
+      opacity: 1;
+      max-height: 20;
+      opacity: 1;
+    }
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+
+      transform: translateY(-10px);
+      transition: opacity 0.4s ease-out, transform 0.4s ease;
+      &.active {
+        max-height: 1200px;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}

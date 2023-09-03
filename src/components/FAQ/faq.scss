@@ -1,0 +1,30 @@
+.faq{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 200px;
+        .heading{
+            color: #121212;
+            font-family: "Roboto";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 87.305%;
+            margin: 0;
+        }
+    .caligraphy{
+        margin: 0;
+        margin-top: 2%;
+        display: flex;
+        color: #514A7E;
+        font-family: "Bad Script";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 87.305%;
+        justify-content: center;
+    }
+
+
+
+}

@@ -1,0 +1,60 @@
+.pop-up-categories.visible {
+    transform: translateX(0); 
+    opacity: 1; 
+    z-index: 44;
+   
+   
+  }
+
+.pop-up-categories {
+    
+    position: absolute;
+    margin-left: 0px;
+    background-color: #FFFDF5;
+    
+    width: 140px;
+    
+    opacity: 0;
+    transform: translatex(-150px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+
+   
+    .logo{
+        
+        
+        
+        align-items: center;
+        .logo-img{
+          
+            width: 140px;
+            height: 140px;
+        }
+    }
+    .navbar-item{
+        padding-left: 32px;
+        padding-bottom: 20px;
+   
+
+        
+    .item{
+        list-style-type:  none;
+        color: #534b2e;
+        font-family: "Roboto";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-bottom: 20px;
+        letter-spacing: 0.09em;
+        cursor: pointer;
+        user-select: none;
+        }
+    .item:active{
+        transform: scale(1.05);
+    }
+    .item:hover{
+        transition: 0.4s;
+        transform: scale(1.07);
+    }
+    }
+}

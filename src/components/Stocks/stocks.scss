@@ -1,0 +1,43 @@
+.stocks-container{
+ 
+    display: block;
+    justify-content:space-between;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    width:85%;
+    gap: 20px; 
+    .offer{
+        margin: 0;
+        color: #121212;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 87.305%; 
+        margin-left: 3%;
+        
+    }
+    .offer-stock{
+        margin: 0;
+        color: #514A7E;
+        font-family: "Bad Script";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 87.305%; 
+        margin-left: 22%;
+        margin-top: 10px;
+        margin-bottom: 7%;
+    }
+    .slick-prev:before, .slick-next:before {
+
+        color: black;
+    }
+    .slick-initialized .slick-slide {
+        
+    }
+    .slick-list{
+       margin-left: 30px;
+    }
+
+}

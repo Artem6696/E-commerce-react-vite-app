@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  .category-nav {
+    transition: 0.5s;
+    
+    color: #7d7d7d;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    span{
+      color: #c45b5b;
+    }
+  }
+  @media (min-width: 1425px) {
+    .category-nav{
+      margin-right: 41.5%; /* Измените значение по вашему усмотрению */
+    }
+  }
+  @media (min-width: 1920px) {
+    .category-nav {
+      margin-right: 39.4%;
+    }
+  }
+}
+
+.catalog {
+  margin-top: 2%;
+
+  display: flex;
+
+  width: 80%;
+}

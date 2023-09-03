@@ -1,0 +1,94 @@
+.wrapper {
+  display: flex;
+  min-height: 1500px;
+  flex-direction: row;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+
+      margin-right: 200px;
+    
+   
+  .total {
+          margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+   
+   
+    .total-title {
+      margin-left: auto;
+      color: #121212;
+      font-family: Roboto;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 118%;
+    }
+    .total-price {
+      color: #514a7e;
+      font-family: Roboto;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 118%; /* 47.2px */
+    }
+    .product-quantity {
+      padding-top: 25px;
+      margin-left: 60px;
+      color: #7d7d7d;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 118%; /* 16.52px */
+    }
+  
+  }
+
+     @media (min-width: 1425px) {
+    .total {
+      margin-right: 105px;
+    }
+  }
+      @media (min-width: 1920px) {
+    .total {
+      margin-right: 324px;
+    }
+  }
+ 
+}
+.basket-info {
+  display: flex;
+  width: 80%;
+  margin-top: 2%;
+
+  .basket-title {
+    color: #121212;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+  }
+  .basket-svg {
+    padding-top: 40px;
+    display: flex;
+    align-content: center;
+    margin-left: 15px;
+  }
+  .basket-count {
+    padding-top: 10px;
+    color: #514a7e;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .content {
+    gap: 22px;
+  }
+}

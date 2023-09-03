@@ -1,0 +1,154 @@
+.basket-item {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  .basket-item_img {
+    width: 20%;
+    .img {
+      width: 70%;
+      height: 80%;
+      box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+    }
+  }
+  .box-info {
+    width: 400px;
+    .name {
+      margin: 0;
+      color: #121212;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 118%;
+    }
+    .id {
+      color: #756666;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 118%;
+    }
+    .color-size-box {
+      margin: 5% 0 5%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .color {
+        margin-right: 8px;
+        color: #7d7d7d;
+
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 118%;
+      }
+      .specific-circle {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #000;
+        border-radius: 50%;
+      }
+      .size {
+        margin-left: 25px;
+        color: #7d7d7d;
+
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 118%;
+      }
+    }
+    .product-control-box {
+      gap: 35px;
+      display: flex;
+
+      .quantity {
+        color: #514a7e;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 118%; /* 23.6px */
+      }
+    }
+    .box-favorite-remove {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: row;
+      .favorite-box {
+        display: flex;
+        flex-direction: row;
+        .favorite {
+          color: #7d7d7d;
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 118%; /* 16.52px */
+        }
+        .svg {
+          margin-right: 8px;
+          padding-top: 14px;
+        }
+      }
+      .remove-box {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: row;
+        .remove {
+          color: #7d7d7d;
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 118%;
+        }
+        .svg {
+          margin-right: 5px;
+          padding-top: 14px;
+        }
+      }
+    }
+  }
+  .price-info {
+    width: 200px;
+    margin-left: 20%;
+    .title {
+      margin: 0;
+      color: #121212;
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .price {
+      color: #514a7e;
+      font-family: Roboto;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 118%; /* 47.2px */
+    }
+    .valute {
+      font-size: 20px;
+    }
+    .ship-info {
+        display: flex;
+      .info {
+        color: #514a7e;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 118%; /* 16.52px */
+      }
+      .svg{
+        padding-top: 18px;
+
+      }
+    }
+  }
+}

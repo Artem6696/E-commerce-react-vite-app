@@ -1,0 +1,107 @@
+.header {
+  display: flex;
+  width: 80%;
+  margin-top: 2%;
+
+  justify-content: space-between;
+  .drop {
+    background-color: #a8a7a7;
+    width: 200px;
+    margin-right: auto;
+    position: absolute;
+  }
+  .left-side {
+    display: flex;
+  }
+  .right-side {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    .search-img {
+      height: 24px;
+      width: 24px;
+    }
+
+    @media (min-width: 1425px) {
+        .dropdown-menu {
+          right: 143px; /* Измените значение по вашему усмотрению */
+        }
+      }
+      @media (min-width: 1920px) {
+        .dropdown-menu {
+          right: 190px; 
+        }
+      }
+    .dropdown-menu {
+      position: absolute;
+      box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      transform: translateY(-10px); 
+      transition: transform 0.3s ease, opacity 0.3s ease; 
+
+      .drop-down-box {
+       
+        position: relative;
+        width: 230px;
+        // height: 239px;
+        background: #FFFDF5;
+      }
+    }
+
+    .dropdown-menu.dropdown-visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+
+
+
+    .input {
+      margin-left: 5%;
+      border: none;
+      width: 399px;
+      border-bottom: 1px solid #333;
+      background: none;
+
+      color: #a8a7a7;
+
+      font-size: 18px;
+
+      font-weight: lighter;
+    }
+    .avatar {
+      margin-left: 8%;
+      .avatar-img {
+        height: 24px;
+        width: 24px;
+      }
+      .avatar-img:active{
+        transform: scale(1.30);
+       }
+    }
+    .favorite {
+      margin-left: 2%;
+      .favorite-img {
+        height: 24px;
+        width: 24px;
+      }
+       .favorite-img:active{
+        transform: scale(1.30);
+       }
+    }
+    .busket {
+      margin-left: 2%;
+      .busket-img {
+        height: 24px;
+        width: 24px;
+      }
+      .busket-img:active{
+        transform: scale(1.30);
+       }
+    }
+  }
+}

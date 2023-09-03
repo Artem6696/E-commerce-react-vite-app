@@ -1,0 +1,728 @@
+[
+    {
+        "_id": "64e0a28346694336e1096b2b",
+        "name": "МУЖСКАЯ ФУТБОЛКА ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FAD/201/800_1200_2/FAD21091-1P_201_20.jpg?cdn=1691395243"
+        ],
+        "amount": 10,
+        "price": 11990,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a2bf46694336e1096b31",
+        "name": "БАЗОВАЯ ФУТБОЛКА ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSD/101/800_1200_2/FSD21058_101_20.jpg?cdn=1682082764"
+        ],
+        "amount": 10,
+        "price": 6375,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a2ee46694336e1096b37",
+        "name": "ПОЛО ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSD/201/800_1200_2/FSD21017_201_20.jpg?cdn=1683717817"
+        ],
+        "amount": 10,
+        "price": 10200,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a35e46694336e1096b3b",
+        "name": "ФУТБОЛКА ИЗ ХЛОПКА В ПОЛОСКУ",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/643MC/800_1200_2/FBD210139_643MC_20.jpg?cdn=1678189857"
+        ],
+        "amount": 10,
+        "price": 7650,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a39646694336e1096b41",
+        "name": "ПОЛО С КОРОТКИМ РУКАВОМ ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/115/800_1200_2/FBD210122-1P_115_20.jpg?cdn=1679504371"
+        ],
+        "amount": 10,
+        "price": 7650,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a3cf46694336e1096b47",
+        "name": "ПОЛО ИЗ ХЛОПКА С КОНТРАСТНОЙ ОТДЕЛКОЙ",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/101MC/800_1200_2/FBD210126_101MC_20.jpg?cdn=1678189841"
+        ],
+        "amount": 10,
+        "price": 11475,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a41046694336e1096b4d",
+        "name": "ФУТБОЛКА OVERSIZE СИЛУЭТА ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/BAS/433/800_1200_2/BAS-20076_433_20.jpg?cdn=1677510929"
+        ],
+        "amount": 10,
+        "price": 5100,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a47046694336e1096b51",
+        "name": "ФУТБОЛКА ИЗ ХЛОПКА С ПРИНТОМ",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/201/800_1200_2/FBD210107-1P_201_20.jpg?cdn=1678189834"
+        ],
+        "amount": 10,
+        "price": 6375,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a58846694336e1096b56",
+        "name": "ПОЛО С КОРОТКИМ РУКАВОМ ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/200MC/800_1200_2/FBD21026_200MC_20.jpg?cdn=1677511013"
+        ],
+        "amount": 10,
+        "price": 6375,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a61046694336e1096b60",
+        "name": "ФУТБОЛКА ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/322/800_1200_2/FBD21023_322_20.jpg?cdn=1685014855"
+        ],
+        "amount": 10,
+        "price": 5100,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a67946694336e1096b66",
+        "name": "ПОЛО ИЗ ХЛОПКА С КОНТРАСТНОЙ ОТДЕЛКОЙ",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/519MC/800_1200_2/FBD210125_519MC_20.jpg?cdn=1677510977"
+        ],
+        "amount": 10,
+        "price": 8925,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a6b646694336e1096b6c",
+        "name": "ПОЛО С КОРОТКИМ РУКАВОМ ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/643MC/800_1200_2/FBD210124_643MC_20.jpg?cdn=1677510975"
+        ],
+        "amount": 10,
+        "price": 9775,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0a88646694336e1096b74",
+        "name": "ФУТБОЛКА МУЖСКАЯ",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/BAS/130/800_1200_2/BAS-20008_130_20.jpg?cdn=1648721567"
+        ],
+        "amount": 10,
+        "price": 7650,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0aaf546694336e1096b7b",
+        "name": "ФУТБОЛКА ИЗ ХЛОПКА",
+        "category": "Футболки",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/200/800_1200_2/FBD210163_200_20.jpg?cdn=1674468741"
+        ],
+        "amount": 10,
+        "price": 8500,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0ab7f46694336e1096b80",
+        "name": "МУЖСКИЕ ДЖИНСЫ LOOSE FIT СВОБОДНОГО КРОЯ",
+        "category": "Джинсы",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FAD/1251/800_1200_2/FAD25004_1251_10.jpg?cdn=1692260410"
+        ],
+        "amount": 10,
+        "price": 35390,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0ac5d46694336e1096b8c",
+        "name": "МУЖСКИЕ ДЖИНСЫ SLIM FIT",
+        "category": "Джинсы",
+        "description": "Основной материал: 98% хлопок, 2% эластан",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FAD/125/800_1200_2/FAD25000_125_20.jpg?cdn=1690818745"
+        ],
+        "amount": 10,
+        "price": 34790,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0aca946694336e1096b90",
+        "name": "ДЖИНСЫ-ДЖОГГЕРЫ",
+        "category": "Джинсы",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/1251/800_1200_2/FBD25003_1251_20.jpg?cdn=1673956069"
+        ],
+        "amount": 10,
+        "price": 11900,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0acde46694336e1096b94",
+        "name": "ДЖИНСЫ SLIM FIT С ЭЛАСТАНОМ",
+        "category": "Джинсы",
+        "description": "Основной материал: 98% хлопок, 2% эластан",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/127/800_1200_2/FBD25000_127_20.jpg?cdn=1675845262"
+        ],
+        "amount": 10,
+        "price": 25491,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0ad1046694336e1096b98",
+        "name": "ДЖИНСЫ МУЖСКИЕ COMFORT FIT",
+        "category": "Джинсы",
+        "description": "Основной материал: 98% хлопок, 2% эластан",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBC/1251/800_1200_2/FBC25017_1251_20.jpg?cdn=1665494765"
+        ],
+        "amount": 10,
+        "price": 22950,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0adb246694336e1096b9c",
+        "name": "ДЖИНСЫ МУЖСКИЕ ПРЯМОГО КРОЯ",
+        "category": "Джинсы",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBC/1251/800_1200_2/FBC25016_1251_20.jpg?cdn=1649412625"
+        ],
+        "amount": 10,
+        "price": 20825,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0ae0946694336e1096ba1",
+        "name": "ДЖИНСЫ МУЖСКИЕ",
+        "category": "Джинсы",
+        "description": "Основной материал: 98% хлопок, 2% эластан",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/B21/200/800_1200_2/B21-25012_200_20.jpg?cdn=1655205063"
+        ],
+        "amount": 10,
+        "price": 15000,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c12f46694336e1096cbd",
+        "name": "ПРЯМЫЕ МУЖСКИЕ ДЖИНСЫ SLIM FIT ИЗ ХЛОПКА",
+        "category": "Джинсы",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FAD/200/800_1200_2/FAD25008_200_10.jpg?cdn=1688031925"
+        ],
+        "amount": 10,
+        "price": 32990,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c1b646694336e1096cc4",
+        "name": "ДЖИНСЫ STRAIGHT FIT",
+        "category": "Джинсы",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSD/105/800_1200_2/FSD25003_105_20.jpg?cdn=1682602605"
+        ],
+        "amount": 10,
+        "price": 22091,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c26746694336e1096cd0",
+        "name": "ДЖИНСЫ STRAIGHT FI",
+        "category": "Джинсы",
+        "description": "Основной материал: 97% хлопок, 3% вискоза",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FBD/1251/800_1200_2/FBD25001_1251_20.jpg?cdn=1672046594"
+        ],
+        "amount": 10,
+        "price": 24641,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c30046694336e1096cd7",
+        "name": "ДЖИНСЫ STRAIGHT FIT С ЭЛАСТАНОМ",
+        "category": "Джинсы",
+        "description": "Основной материал: 98% хлопок, 2% эластан",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FAC/200/800_1200_2/FAC25006_200_20.jpg?cdn=1691394320"
+        ],
+        "amount": 10,
+        "price": 28041,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c35546694336e1096cde",
+        "name": "БАЗОВЫЕ ШОРТЫ-КАРГО ИЗ ХЛОПКА",
+        "category": "Шорты",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSD/543/800_1200_2/FSD21034_543_20.jpg?cdn=1680786245"
+        ],
+        "amount": 10,
+        "price": 11900,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c3a046694336e1096ce5",
+        "name": "ДЖИНСОВЫЕ ШОРТЫ",
+        "category": "Шорты",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSD/1261/800_1200_2/FSD25012_1261_20.jpg?cdn=1680518138"
+        ],
+        "amount": 10,
+        "price": 8500,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c45d46694336e1096cfb",
+        "name": "ДЖИНСОВЫЕ ШОРТЫ",
+        "category": "Шорты",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSD/2002/800_1200_2/FSD25012_2002_20.jpg?cdn=1680518140"
+        ],
+        "amount": 10,
+        "price": 14025,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c51a46694336e1096d07",
+        "name": "ШОРТЫ С НЕОБРАБОТАННЫМ КРАЕМ",
+        "category": "Шорты",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSD/1261/800_1200_2/FSD25013_1261_20.jpg?cdn=1680518146"
+        ],
+        "amount": 10,
+        "price": 14450,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c5a646694336e1096d0e",
+        "name": "ШОРТЫ МУЖСКИЕ",
+        "category": "Шорты",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSC/1251/800_1200_2/FSC25007_1251_20.jpg?cdn=1649848822"
+        ],
+        "amount": 10,
+        "price": 10800,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c5f346694336e1096d15",
+        "name": "ШОРТЫ МУЖСКИЕ",
+        "category": "Шорты",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSC/101/800_1200_2/FSC21022_101_20.jpg?cdn=1683185531"
+        ],
+        "amount": 10,
+        "price": 15725,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c63746694336e1096d1c",
+        "name": "ШОРТЫ МУЖСКИЕ",
+        "category": "Шорты",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/FSC/101/800_1200_2/FSC21005_101_20.jpg?cdn=1683185508"
+        ],
+        "amount": 10,
+        "price": 13600,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    },
+    {
+        "_id": "64e0c6c446694336e1096d23",
+        "name": "ШОРТЫ МУЖСКИЕ",
+        "category": "Шорты",
+        "description": "Основной материал: 100% хлопок",
+        "photosURL": [
+            "https://cdn.finnflare.com/upload/resize_cache/full_size/S21/200/800_1200_2/S21-21040_200_10.jpg?cdn=1620390063"
+        ],
+        "amount": 10,
+        "price": 9750,
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "colors": [
+            "#ffffff"
+        ],
+        "rating": 0,
+        "__v": 0
+    }
+]

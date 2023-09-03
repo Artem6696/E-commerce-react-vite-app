@@ -13,9 +13,11 @@ export const api = createApi({
             query: (page = 1) => `products/getAllProducts?page=${page}`,
             providesTags: ['products']
         }),
-        
+        getFilterCategoryProducts: builder.query({
+            query: ( category = null) => `products/byFilter/${category}`
+        })
         
     })
 })
 
-export const { useGetAllProductsQuery } = api
+export const { useGetAllProductsQuery, useGetFilterCategoryProductsQuery } = api

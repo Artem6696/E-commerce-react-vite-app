@@ -40,7 +40,7 @@ export const BasketItem = ({
               borderRadius: "50%",
             }}
           ></div>
-          <p className="size">Размер: {sizes[0]}</p>
+          <p className="size">Размер: {sizes && sizes[0]}</p>
         </div>
         <div className="product-control-box">
           <div

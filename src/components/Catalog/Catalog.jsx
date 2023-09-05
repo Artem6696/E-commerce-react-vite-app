@@ -14,6 +14,7 @@ export const Catalog = () => {
   const catalogQuery = useGetAllProductsQuery(currentPage).data;
   const [catalogProductList, setCatalogProductList] = useState([]);
 
+  
   const prevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);

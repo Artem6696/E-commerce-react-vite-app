@@ -1,33 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import "./basket.scss";
 import { Header } from "../components/Header/Header";
 import { useSelector } from "react-redux";
 import { BasketItem } from "../components/BasketItem/BasketItem";
 import { Footer } from "../components/Footer/Footer";
 import { PopUpCategories } from "../components/Content/PopUpCategories";
+import { Modal } from "../components/Modal/Modal";
 
 export const Basket = () => {
   const basket = useSelector((state) => state.basket.basketUser);
-  const elemVisibleBasket = true
+  const isAuth = useSelector((state) => state.userStatus.user);
+  const elemVisibleBasket = true;
+  const [errorMessage, setErrorMessage] = useState("");
+  //стейты для модального окна
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+  const [agreed, setAgreed] = useState(false);
+  const checkAgreed = () => {
+    if (agreed && isAuth) {
+      openModal();
+    }
+    if (agreed && isAuth === null) {
+      setErrorMessage("Для оформления заказа Вам необходимо авторизоваться");
+    }
+  };
+  const handleAgreementChange = (event) => {
+    setAgreed(!agreed);
+  };
+  console.log(agreed);
+  console.log(isAuth);
+
   const getTotal = () => {
     let productCount = 0;
-    let totalPrice = 0
+    let totalPrice = 0;
     basket.forEach((item) => {
       productCount += item.quantity;
-      totalPrice += item.price * item.quantity
+      totalPrice += item.price * item.quantity;
     });
-    return {productCount, totalPrice};
+    return { productCount, totalPrice };
   };
   const style = {
-    position: 'fixed'
-  }
+    position: "fixed",
+  };
+
   return (
     <div className="wrapper">
       <Header />
-     
+
       <div className="basket-info">
         <h3 className="basket-title">Коризна</h3>{" "}
-        <svg className="basket-svg"
+        <svg
+          className="basket-svg"
           xmlns="http://www.w3.org/2000/svg"
           width="34"
           height="34"
@@ -42,25 +70,56 @@ export const Basket = () => {
         <p className="basket-count">{getTotal().productCount}</p>
       </div>
       <div className="content">
-      <PopUpCategories style={style}/>
-      <div className="items"> {basket.map((item) => (
-        <BasketItem
-        key={item._id}
-        _id={item._id}
-        name={item.name}
-        photosURL={item.photosURL}
-        colors={item.colors}
-        price={item.price}
-        sizes={item.sizes}
-        quantity={item.quantity}
-        />
-      ))}</div>
+        {<PopUpCategories style={style} />}
+        <div className="items">
+          {" "}
+          {basket.map((item) => (
+            <BasketItem
+              key={item._id}
+              _id={item._id}
+              name={item.name}
+              photosURL={item.photosURL}
+              colors={item.colors}
+              price={item.price}
+              sizes={item.sizes}
+              quantity={item.quantity}
+            />
+          ))}
+        </div>
       </div>
+
       <div className="total">
-        <p className="total-title">Итог: <span className="total-price">{getTotal().totalPrice}</span></p>
+        <div className="button-order">
+          <button onClick={checkAgreed} className="btn">
+            Заказать
+          </button>
+        </div>
+
+        <p className="total-title">
+          Итог: <span className="total-price">{getTotal().totalPrice}</span>
+        </p>
         <p className="product-quantity">Товары {getTotal().productCount}шт</p>
       </div>
-      <Footer elemVisibleBasket={elemVisibleBasket}/>
+      <div className="radio-button">
+        <input
+          type="checkbox"
+          name="agreement"
+          checked={agreed}
+          onChange={handleAgreementChange}
+        />
+
+        <div className="text-info">
+          <p className="radio-text">
+            Согласен с условиями правил пользования торговой площадкой и
+            правилами возврата
+          </p>
+        </div>
+      </div>
+      {<p className="error-message">{errorMessage}</p>}
+      {<Footer elemVisibleBasket={elemVisibleBasket} />}
+      {isAuth && (
+        <Modal user={isAuth} isOpen={isModalOpen} closeModal={closeModal} />
+      )}
     </div>
   );
 };

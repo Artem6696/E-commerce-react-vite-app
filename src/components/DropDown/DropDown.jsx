@@ -16,7 +16,7 @@ export const DropDown = () => {
     });
     return amountProduct
   }
-  console.log(getAmountInBasket());
+  
   return (
     <div className="auth-container">
       <div className="auth">

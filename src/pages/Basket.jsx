@@ -21,19 +21,21 @@ export const Basket = () => {
     setIsModalOpen(false);
   };
   const [agreed, setAgreed] = useState(false);
+
   const checkAgreed = () => {
+    //если чекбокс cheked и юзер авторизрован
     if (agreed && isAuth) {
       openModal();
     }
+    //если чекбокс cheked но юзер не авторизирован
     if (agreed && isAuth === null) {
       setErrorMessage("Для оформления заказа Вам необходимо авторизоваться");
     }
   };
+
   const handleAgreementChange = (event) => {
     setAgreed(!agreed);
   };
-  console.log(agreed);
-  console.log(isAuth);
 
   const getTotal = () => {
     let productCount = 0;
@@ -44,6 +46,7 @@ export const Basket = () => {
     });
     return { productCount, totalPrice };
   };
+
   const style = {
     position: "fixed",
   };
@@ -71,51 +74,68 @@ export const Basket = () => {
       </div>
       <div className="content">
         {<PopUpCategories style={style} />}
-        <div className="items">
-          {" "}
-          {basket.map((item) => (
-            <BasketItem
-              key={item._id}
-              _id={item._id}
-              name={item.name}
-              photosURL={item.photosURL}
-              colors={item.colors}
-              price={item.price}
-              sizes={item.sizes}
-              quantity={item.quantity}
+        {basket.length === 0 ? (
+          <div className="order">
+            <img
+              className="no-order-img"
+              src="/src/assets/Image/clean_order.png"
+              alt=""
             />
-          ))}
-        </div>
+            <p className="order-text">ваша корзина пуста :(</p>
+          </div>
+        ) : (
+          <div className="items">
+            {" "}
+            {basket.map((item) => (
+              <BasketItem
+                key={item._id}
+                _id={item._id}
+                name={item.name}
+                photosURL={item.photosURL}
+                colors={item.colors}
+                price={item.price}
+                sizes={item.sizes}
+                quantity={item.quantity}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
-      <div className="total">
-        <div className="button-order">
-          <button onClick={checkAgreed} className="btn">
-            Заказать
-          </button>
-        </div>
+      {basket.length > 0 && (
+        <div className="order-info-box">
+          <div className="total">
+            <div className="button-order">
+              <button onClick={checkAgreed} className="btn">
+                Заказать
+              </button>
+            </div>
 
-        <p className="total-title">
-          Итог: <span className="total-price">{getTotal().totalPrice}</span>
-        </p>
-        <p className="product-quantity">Товары {getTotal().productCount}шт</p>
-      </div>
-      <div className="radio-button">
-        <input
-          type="checkbox"
-          name="agreement"
-          checked={agreed}
-          onChange={handleAgreementChange}
-        />
+            <p className="total-title">
+              Итог: <span className="total-price">{getTotal().totalPrice}</span>
+            </p>
+            <p className="product-quantity">
+              Товары {getTotal().productCount}шт
+            </p>
+          </div>
+          <div className="radio-button">
+            <input
+              type="checkbox"
+              name="agreement"
+              checked={agreed}
+              onChange={handleAgreementChange}
+            />
 
-        <div className="text-info">
-          <p className="radio-text">
-            Согласен с условиями правил пользования торговой площадкой и
-            правилами возврата
-          </p>
+            <div className="text-info">
+              <p className="radio-text">
+                Согласен с условиями правил пользования торговой площадкой и
+                правилами возврата
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      {<p className="error-message">{errorMessage}</p>}
+      )}
+      {basket.length > 0 && <p className="error-message">{errorMessage}</p>}
       {<Footer elemVisibleBasket={elemVisibleBasket} />}
       {isAuth && (
         <Modal user={isAuth} isOpen={isModalOpen} closeModal={closeModal} />

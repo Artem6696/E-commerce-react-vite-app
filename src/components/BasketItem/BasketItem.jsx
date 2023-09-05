@@ -8,15 +8,7 @@ import {
   removeItem,
 } from "../../redux/slice/basketSlice";
 
-export const BasketItem = ({
-  _id,
-  name,
-  photosURL,
-  colors,
-  price,
-  sizes,
-  quantity = 0,
-}) => {
+export const BasketItem = ({_id,name,photosURL,colors,price,sizes,quantity = 0, }) => {
 
 
   const dispatch = useDispatch();

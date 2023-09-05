@@ -13,10 +13,12 @@ import {
   LOGIN_ROUTE,
   PRODUCT_ROOUTE,
   REGISTRATION_ROUTE,
-  PRODUCT_SEARCH
+  PRODUCT_SEARCH,
+  FAVORITE_ROUTE
   
 } from "./consts";
 import { ProductsSearch } from "../pages/ProductsSearch";
+import { Favorite } from "../pages/Favorite";
 
 export const authRoutes = [
   {
@@ -58,5 +60,9 @@ export const publickRoutes = [
   {
     path: PRODUCT_SEARCH + '/:value',
     Component: ProductsSearch
+  },
+  {
+    path: FAVORITE_ROUTE,
+    Component: Favorite
   }
 ];

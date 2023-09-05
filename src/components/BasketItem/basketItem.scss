@@ -3,6 +3,16 @@
   display: flex;
   flex-direction: row;
   width: 80%;
+  @media (min-width: 1425px) {
+  
+      margin-left: 202px;
+
+  }
+  @media (min-width: 1920px) {
+  
+    margin-left: 275px;
+
+}
   .basket-item_img {
     width: 20%;
     .img {

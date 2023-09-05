@@ -7,6 +7,7 @@
   padding: 0;
 
   margin-right: 200px;
+  
   .error-message{
     color: red;
     margin-bottom: 100PX;
@@ -46,11 +47,14 @@
       
     }
   }
+  .order-info-box{
+    margin-left: 300px;
+  }
   .total {
-    margin-right: 20px;
+    
     display: flex;
     flex-direction: row;
-    width: 80%;
+  
     margin-top: 5%;
     margin-bottom: 0;
    
@@ -58,7 +62,7 @@
     .button-order {
       display: flex;
       margin-left: auto;
-    
+    margin-right: 0;
       margin-top: 36px;
       .btn {
         width: 149.28px;
@@ -92,7 +96,7 @@
    
     }
     .total-title {
-      margin-left: auto;
+      margin-left: 310px;
       color: #121212;
       font-family: Roboto;
       font-size: 25px;
@@ -122,12 +126,41 @@
 
   @media (min-width: 1425px) {
     .total {
-      margin-right: 105px;
+      margin-right: 180px;
     }
   }
   @media (min-width: 1920px) {
     .total {
-      margin-right: 324px;
+      margin-right: 405px;
+    }
+  }
+}
+.content{
+  .order{
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 1425px) {
+    .order {
+      margin-left: 555px;
+    }
+  }
+  @media (min-width: 1920px) {
+    .order {
+      margin-left: 755px;
+    }
+  }
+  .order{
+      .order-text{
+        color: #353536;
+        font-family: Roboto;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 118%
+      }
+    .no-order-img{
+    width: 40%;
     }
   }
 }
@@ -160,5 +193,7 @@
   }
   .content {
     gap: 22px;
+  
   }
+ 
 }

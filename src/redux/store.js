@@ -18,6 +18,7 @@ import { setupListeners } from "@reduxjs/toolkit/dist/query";
 import appSlice from "./slice/appSlice";
 import  { basketReducer }  from "./slice/basketSlice";
 import { userReducer } from "./slice/userSlice";
+import { favoriteReducer } from "./slice/favoriteSlice";
 
 
 const persistConfig = {
@@ -26,13 +27,15 @@ const persistConfig = {
   };
   
 const persistedReducerForBusket = persistReducer(persistConfig, basketReducer)
+const persistedReducerForFavorite = persistReducer(persistConfig, favoriteReducer)
 const presistReudcerForUser = persistReducer(persistConfig, userReducer)
 export const store = configureStore({
     reducer: {
         [api.reducerPath]: api.reducer,
         app: appSlice,
         basket: persistedReducerForBusket,
-        userStatus: presistReudcerForUser
+        favorite: persistedReducerForFavorite,
+        userStatus: presistReudcerForUser,
         
     },
    middleware: (getDefaultMiddleware) => {

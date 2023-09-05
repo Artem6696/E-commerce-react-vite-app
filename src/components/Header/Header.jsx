@@ -129,7 +129,7 @@ export const Header = () => {
             )}
           </div>
         </div>
-        <div className="favorite">
+        <div className="favorite" onClick={() => navigate('/favorite')}>
           <svg
             className="favorite-img"
             xmlns="http://www.w3.org/2000/svg"

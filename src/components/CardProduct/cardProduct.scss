@@ -43,6 +43,9 @@
         flex-direction: row;
         width: 100%;
         align-items: center;
+        .link{
+             text-decoration: none;
+        }
         
         .favorite{
             height: 25px;

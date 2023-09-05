@@ -16,6 +16,7 @@
   .basket-item_img {
     width: 20%;
     .img {
+      user-select: none;
       width: 70%;
       height: 80%;
       box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
@@ -23,14 +24,23 @@
   }
   .box-info {
     width: 400px;
+    .link{
+      text-decoration: none;
+    }
     .name {
       margin: 0;
-      color: #121212;
+      color: #bb8e8e;
       font-size: 20px;
       font-style: normal;
       font-weight: 400;
       line-height: 118%;
+      transition: transform 0.5s 
     }
+    .name:hover{
+      transition: 0.3s;
+      transform: scale(1.07);
+      color: #514a7e;
+  }
     .id {
       color: #756666;
       font-family: Roboto;
@@ -80,8 +90,18 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 118%; /* 23.6px */
+        line-height: 118%; 
+        user-select: none;
       }
+      .increment, .decrement{
+        cursor: pointer;
+      }
+      .increment-svg:active{
+        transform: scale(1.30);
+       }
+       .decrement-svg:active{
+        transform: scale(1.30);
+       }
     }
     .box-favorite-remove {
       margin-top: 24px;
@@ -90,7 +110,9 @@
       .favorite-box {
         display: flex;
         flex-direction: row;
+        cursor: pointer;
         .favorite {
+          user-select: none;
           color: #7d7d7d;
           font-family: Roboto;
           font-size: 16px;
@@ -102,12 +124,18 @@
           margin-right: 8px;
           padding-top: 14px;
         }
+        .favorite:active{
+          transform: scale(1.1);
+         }
+
       }
       .remove-box {
+        cursor: pointer;
         margin-left: 50px;
         display: flex;
         flex-direction: row;
         .remove {
+          user-select: none;
           color: #7d7d7d;
           font-family: Roboto;
           font-size: 16px;
@@ -115,10 +143,16 @@
           font-weight: 300;
           line-height: 118%;
         }
+        .remove:active{
+          transform: scale(1.1);
+         }
         .svg {
           margin-right: 5px;
           padding-top: 14px;
         }
+        .svg:active{
+          transform: scale(1.30);
+         }
       }
     }
   }
@@ -126,6 +160,7 @@
     width: 200px;
     margin-left: 20%;
     .title {
+      user-select: none;
       margin: 0;
       color: #121212;
       font-family: Roboto;
@@ -135,6 +170,7 @@
       line-height: normal;
     }
     .price {
+      user-select: none;
       color: #514a7e;
       font-family: Roboto;
       font-size: 40px;
@@ -148,6 +184,7 @@
     .ship-info {
         display: flex;
       .info {
+        user-select: none;
         color: #514a7e;
         font-family: Roboto;
         font-size: 14px;

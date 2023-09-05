@@ -8,7 +8,58 @@
     padding: 0;
     
     .content{
-
+        display: flex;
         margin-top: 40px;
+        .favorite-list{
+          min-height: 800px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content:flex-start;
+          width: 80%;
+          gap: 75px;
+          margin-left: auto;
+          margin-bottom: 10%;
+          .product-card{
+              width: 250px;
+              height: 508px;
+              .product-image{
+                  height: 387px
+              }
+          }
+      }
     }
 }
+.favorite-info {
+    display: flex;
+    width: 80%;
+    margin-top: 2%;
+  
+    .basket-title {
+      color: #121212;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 87.305%;
+    }
+    .favorite-svg {
+      padding-top: 40px;
+      display: flex;
+      align-content: center;
+      margin-left: 15px;
+    }
+    .basket-count {
+      padding-top: 10px;
+      color: #514a7e;
+  
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .content {
+      gap: 22px;
+    
+    }
+   
+  }
+  

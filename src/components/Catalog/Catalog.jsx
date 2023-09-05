@@ -18,10 +18,20 @@ export const Catalog = () => {
   const prevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Добавляет плавную анимацию прокрутки
+      });
     }
   };
+  const nextPage = () => {
+    setCurrentPage(currentPage + 1);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Добавляет плавную анимацию прокрутки
+    });
+  }
 
-  const basket = useSelector((state) => state.basket);
 
   const category = useSelector((state) => state.app.selectedCategory);
 
@@ -41,36 +51,41 @@ export const Catalog = () => {
   }
 
   return (
-    <div className="wrapper-catalog">
-      <Header />
+<>
+{catalogQuery ? (
+  <div className="wrapper-catalog">
+  <Header />
 
-      {category === "all" ? (
-        <p className="category-nav">
-          категория: <span>Все товары</span>
-        </p>
-      ) : (
-        <p className="category-nav">
-          категория: <span>{category}</span>
-        </p>
-      )}
-      <ProductsPage catalogProductList={catalogProductList} />
+  {category === "all" ? (
+    <p className="category-nav">
+      категория: <span>Все товары</span>
+    </p>
+  ) : (
+    <p className="category-nav">
+      категория: <span>{category}</span>
+    </p>
+  )}
+  <ProductsPage catalogProductList={catalogProductList} />
 
-      <div className="buttons">
-        {currentPage > 1 && (
-          <button onClick={prevPage}>Предыдущая страница</button>
-        )}
-        <div>{currentPage}</div>
-        <button
-          onClick={() => {
-            setCurrentPage(currentPage + 1);
-          }}
-        >
-          {" "}
-          Следущая страница
-        </button>
-      </div>
+  <div className="buttons">
+    {currentPage > 0 && (
+      <button className="button" onClick={prevPage}>Предыдущая </button>
+    )}
+    <div className="current-page"><p className="page">{currentPage}</p></div>
+ {<button className="button"
+    onClick={nextPage}
+    style={{ visibility: currentPage === catalogQuery?.pages ? 'hidden' : 'visible' }}
+  >
+      {" "}
+      Следущая
+    </button>}
+  </div>
 
-      {<Footer elemVisibleCatalog={elemVisibleCatalog} />}
-    </div>
+  {<Footer elemVisibleCatalog={elemVisibleCatalog} />}
+</div>
+): (
+  <Loader/>
+)}
+</>
   );
 };

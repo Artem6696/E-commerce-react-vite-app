@@ -57,7 +57,7 @@ export const FeedBack = () => {
                 </div>
             </div>
         </div>
-        <div className='button'>
+        <div className='button-slide' style={{cursor: 'pointer'}}>
             <img src="/src/assets/Image/button.svg" alt="" />
         </div>
         </div>

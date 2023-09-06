@@ -10,11 +10,11 @@ export const ProductPage = () => {
 
   return (
    
-    <div className='wrapper'>
+    <div className='wrapper-products-page'>
       <Header/>
       <ProductId/>
       <FeedBack/>
-      <Stocks/>
+      <Stocks title='С этим товаром чаще всего покупают ' subtitle='вам может понравиться'/>
       <Footer/>
     </div>
   )

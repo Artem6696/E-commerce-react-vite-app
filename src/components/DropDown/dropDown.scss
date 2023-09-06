@@ -76,11 +76,12 @@
       background: #7d7d7d;
     }
     .favorite-box {
+     
       display: flex;
       flex-direction: row;
       align-items: center;
       cursor: pointer;
-      margin-right: 43px;
+      margin-right: 8px;
       .favorite {
         margin-left: 10px;
         color: #121212;
@@ -91,13 +92,31 @@
         font-weight: 300;
         line-height: 118%;
       }
+      .favorite-amount {
+        margin-left: 12px;
+        background-color: #514a7e;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        .amount {
+          padding-top: 4.5px;
+          color: #fffdf5;
+          font-family: Roboto;
+          font-size: 13.5px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 118%;
+          margin: 0;
+          text-align: center;
+        }
+      }
     }
     .exit-box {
       display: flex;
       flex-direction: row;
       align-items: center;
       cursor: pointer;
-      margin-right: 70px;
+      margin-right: 10px;
 
       .exit {
         margin-left: 10px;

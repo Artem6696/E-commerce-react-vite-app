@@ -5,18 +5,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../../redux/slice/userSlice";
 export const DropDown = () => {
   const navigate = useNavigate();
-  // const userStatus = useSelector((state) => state.userOnline.user)
+  const favorite = useSelector((state) => state.favorite.favoriteUser);
   const userStatus = useSelector((state) => state.userStatus.user);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const basket = useSelector((state) => state.basket.basketUser);
   const getAmountInBasket = () => {
     let amountProduct = 0;
     basket.forEach((item) => {
-      amountProduct += item.quantity
+      amountProduct += item.quantity;
     });
-    return amountProduct
-  }
-  
+    return amountProduct;
+  };
+
   return (
     <div className="auth-container">
       <div className="auth">
@@ -29,7 +29,12 @@ export const DropDown = () => {
             fill="none"
           >
             {/* "#C4C4C4" */}
-            <circle cx="19.5" cy="19.5" r="19.5" fill={userStatus ? '#252850' :  "#C4C4C4" }/>
+            <circle
+              cx="19.5"
+              cy="19.5"
+              r="19.5"
+              fill={userStatus ? "#252850" : "#C4C4C4"}
+            />
           </svg>
         </div>
         {!userStatus && (
@@ -58,9 +63,13 @@ export const DropDown = () => {
             />
           </svg>
           <p className="basket" onClick={() => navigate("/basket")}>
-            Корзина  
+            Корзина
           </p>
-        {getAmountInBasket() > 0 && <div className="basket-amount"><p className="amount">  {" "} {getAmountInBasket()}</p></div>}
+          {getAmountInBasket() > 0 && (
+            <div className="basket-amount">
+              <p className="amount"> {getAmountInBasket()}</p>
+            </div>
+          )}
         </div>
         <div className="line"></div>
         <div className="favorite-box">
@@ -77,23 +86,37 @@ export const DropDown = () => {
             />
           </svg>
           <p className="favorite">Избранное</p>
+          {favorite.length > 0 && (
+            <div className="favorite-amount">
+              <p className="amount"> {favorite.length}</p>
+            </div>
+          )}
         </div>
-          {userStatus &&         <div className="exit-box">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 12 16"
-            fill="none"
-          >
-            <path
-              d="M1.44434 0.222229H10.3332C10.6279 0.222229 10.9105 0.339292 11.1189 0.547666C11.3273 0.75604 11.4443 1.03866 11.4443 1.33334H1.44434V14.6667H10.3332V9.22223H11.4443V14.6667C11.4443 14.9614 11.3273 15.244 11.1189 15.4523C10.9105 15.6607 10.6279 15.7778 10.3332 15.7778H1.44434C1.14965 15.7778 0.867036 15.6607 0.658663 15.4523C0.450289 15.244 0.333225 14.9614 0.333225 14.6667V1.33334C0.333225 1.03866 0.450289 0.75604 0.658663 0.547666C0.867036 0.339292 1.14965 0.222229 1.44434 0.222229Z"
-              fill="#7D7D7D"
-            />
-          </svg>
-          
-          <p onClick={()=> {dispatch(setUser(null))}} className="exit">Выйти</p>
-        </div>}
+        {userStatus && (
+          <div className="exit-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 12 16"
+              fill="none"
+            >
+              <path
+                d="M1.44434 0.222229H10.3332C10.6279 0.222229 10.9105 0.339292 11.1189 0.547666C11.3273 0.75604 11.4443 1.03866 11.4443 1.33334H1.44434V14.6667H10.3332V9.22223H11.4443V14.6667C11.4443 14.9614 11.3273 15.244 11.1189 15.4523C10.9105 15.6607 10.6279 15.7778 10.3332 15.7778H1.44434C1.14965 15.7778 0.867036 15.6607 0.658663 15.4523C0.450289 15.244 0.333225 14.9614 0.333225 14.6667V1.33334C0.333225 1.03866 0.450289 0.75604 0.658663 0.547666C0.867036 0.339292 1.14965 0.222229 1.44434 0.222229Z"
+                fill="#7D7D7D"
+              />
+            </svg>
+
+            <p
+              onClick={() => {
+                dispatch(setUser(null));
+              }}
+              className="exit"
+            >
+              Выйти
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

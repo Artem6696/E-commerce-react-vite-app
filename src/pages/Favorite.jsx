@@ -3,7 +3,7 @@ import { Header } from "../components/Header/Header";
 import "./favorite.scss";
 import { PopUpCategories } from "../components/Content/PopUpCategories";
 import { useSelector } from "react-redux";
-import { FavoriteItem } from "../components/FavoriteItem/FavoriteItem";
+
 import { CardProduct } from "../components/CardProduct/CardProduct";
 import { Footer } from "../components/Footer/Footer";
 

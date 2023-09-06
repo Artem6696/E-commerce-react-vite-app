@@ -1,14 +1,13 @@
 import React from "react";
 import { Header } from "../Header/Header";
 import "./catalog.scss";
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { ProductsPage } from "../ProductsPage/ProductsPage";
 import { useSelector } from "react-redux";
 import { useGetAllProductsQuery } from "../../redux/api/api";
-
 import { Footer } from "../Footer/Footer";
 import { Loader } from "../Loader/Loader";
+
 export const Catalog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const catalogQuery = useGetAllProductsQuery(currentPage).data;
@@ -20,7 +19,7 @@ export const Catalog = () => {
       setCurrentPage(currentPage - 1);
       window.scrollTo({
         top: 0,
-        behavior: "smooth", // Добавляет плавную анимацию прокрутки
+        behavior: "smooth", // Добавляет плавную анимацию прокрутки вверх
       });
     }
   };
@@ -28,7 +27,7 @@ export const Catalog = () => {
     setCurrentPage(currentPage + 1);
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Добавляет плавную анимацию прокрутки
+      behavior: "smooth", // Добавляет плавную анимацию прокрутки вверх
     });
   }
 
@@ -42,14 +41,14 @@ export const Catalog = () => {
       const catalogList = catalogQuery && catalogQuery.payload;
       setCatalogProductList(randomizeItem(catalogList));
     }
-  }, [catalogQuery, currentPage]);
+  }, [catalogQuery, currentPage]); 
 
   function randomizeItem(arr) {
     const randomizeArray = [...arr];
     randomizeArray.sort(() => Math.random() - 0.5);
     return randomizeArray;
   }
-
+console.log(category);
   return (
 <>
 {catalogQuery ? (
@@ -67,7 +66,7 @@ export const Catalog = () => {
   )}
   <ProductsPage catalogProductList={catalogProductList} />
 
-  <div className="buttons">
+{category == 'all' && <div className="buttons">    
     {currentPage > 0 && (
       <button className="button" onClick={prevPage}>Предыдущая </button>
     )}
@@ -79,7 +78,7 @@ export const Catalog = () => {
       {" "}
       Следущая
     </button>}
-  </div>
+  </div>}
 
   {<Footer elemVisibleCatalog={elemVisibleCatalog} />}
 </div>

@@ -1,12 +1,14 @@
-.wrapper {
+.wrapper-basket {
+  align-items: center;
+  flex-direction: column;
   display: flex;
   min-height: 1500px;
-  flex-direction: row;
+
   font-family: "Roboto";
   margin: 0;
   padding: 0;
 
-  margin-right: 200px;
+  
   
   .error-message{
     color: red;

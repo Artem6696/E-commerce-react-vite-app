@@ -15,11 +15,11 @@ export const LandingPage = () => {
 
   return (
     
-    <div className='wrapper'>
+    <div className='wrapper-main'>
         <Header/>
         <Content/>
         <Info/>
-        <Stocks/>
+        <Stocks title='Успей купить!' subtitle='Акции'/>
         <FeedBack/>
         <Faq/>
         <Cooperation/>

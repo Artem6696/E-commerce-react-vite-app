@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css';
@@ -7,10 +8,15 @@ import {  useGetAllProductsQuery } from '../../redux/api/api'
 import { CardProduct } from '../CardProduct/CardProduct';
 import './stocks.scss'
 
-export const Stocks = () => {
+export const Stocks = (props) => {
   const prodQuery = useGetAllProductsQuery().data
-  // const test = useFetchAllProducts().data
-  // console.log(test);
+  const [catalogProductList, setCatalogProductList] = useState([]);
+  useEffect(() => {
+    if(prodQuery){
+      const productsList =  prodQuery && prodQuery.payload;
+      setCatalogProductList(randomizeItem(productsList))
+    }
+  }, [prodQuery])
  
   const sliderSettings = {
     dots: true,
@@ -46,20 +52,28 @@ export const Stocks = () => {
       }
     ]
   };
-
+  function randomizeItem(arr) {
+    const randomizeArray = [...arr];
+    randomizeArray.sort(() => Math.random() - 0.5);
+    return randomizeArray;
+  }
+console.log(props.title);
   return (
     <div className='stocks-container'>
-      <h1 className='offer'>Успей купить! </h1>
-      <p className='offer-stock'>Акции</p>
+      <h1 className='offer'>{props.title} </h1>
+      <p className='offer-stock'>{props.subtitle}</p>
       <Slider  {...sliderSettings}>
         {prodQuery &&
-          prodQuery.payload.map((card) => (
+          catalogProductList.map((card) => (
             <div key={card._id}>
               <CardProduct
+                key={card._id}
+                _id={card._id}
                 name={card.name}
-                description={card.description}
                 photosURL={card.photosURL}
                 price={card.price}
+                colors={card.colors}
+                sizes={card.sizes}
               />
             </div>
           ))}

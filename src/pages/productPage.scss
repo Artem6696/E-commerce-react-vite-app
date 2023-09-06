@@ -1,4 +1,4 @@
-.wrapper {
+.wrapper-products-page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,4 +6,7 @@
     font-family: "Roboto";
     margin: 0;
     padding: 0;
+    .stocks-container {
+      margin-top: 0;
+    }
   }

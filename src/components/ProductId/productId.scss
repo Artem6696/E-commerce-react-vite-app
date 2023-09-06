@@ -41,7 +41,7 @@
 
   .name {
     margin-top: 20px;
-    margin-left: 180px;
+    
     color: #121212;
     font-family: "Roboto";
     font-size: 40px;
@@ -50,6 +50,10 @@
     line-height: 87.305%;
     margin-right: auto;
     letter-spacing: 0.07em;
+    
+      margin-left: 300px;
+      
+    
   }
   .article {
     color: #7d7d7d;
@@ -63,10 +67,17 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-left: 180px;
-    gap: 10%;
-
+    margin-left: 80px;
+    gap: 5%;
+    @media (min-width: 1425px) {
+      margin-left: 300px;
+      
+    }
+    @media (min-width: 1920px) {
+     
+    }
     .content-image {
+      
       .image {
         width: 500px;
         height: 85%;
@@ -260,4 +271,5 @@
     }
   }
 }
+
 }

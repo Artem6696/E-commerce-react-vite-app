@@ -6,6 +6,7 @@ import { PopUpCategories } from "../Content/PopUpCategories";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../../redux/slice/basketSlice";
 import { Loader } from "../Loader/Loader";
+
 export const ProductId = () => {
   const { id } = useParams();
   const [product, setProduct] = useState();

@@ -52,7 +52,7 @@ export const Basket = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="wrapper-basket">
       <Header />
 
       <div className="basket-info">

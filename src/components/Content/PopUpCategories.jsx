@@ -6,21 +6,19 @@ import { decrement, increment } from "../../redux/slice/appSlice";
 import { useNavigate } from "react-router-dom";
 
 export const PopUpCategories = ({ onCategoryChange, style }) => {
-
   const count = useSelector((state) => state.app.count);
   const dispatch = useDispatch();
-  const visible = useSelector((state) => state.app.visible)
+  const visible = useSelector((state) => state.app.visible);
   const [isVisible, setIsVisible] = useState(false);
   const navigate = useNavigate();
   const handleCategoryClick = (category) => {
-    
     navigate("/catalog/" + category);
-    onCategoryChange(category)
+    onCategoryChange(category);
   };
   return (
-    <div style={style}
+    <div
+      style={style}
       className={`pop-up-categories ${visible ? "visible" : ""}`}
-     
     >
       <div className="logo">
         <img className="logo-img" src="/src/assets/Image/logo_1.svg" alt="" />
@@ -37,11 +35,21 @@ export const PopUpCategories = ({ onCategoryChange, style }) => {
           <li className="item" onClick={() => handleCategoryClick("Шорты")}>
             Шорты
           </li>
-          <li className="item">Брюки</li>
-          <li className="item">Толстовки</li>
-          <li className="item">Поло</li>
-          <li className="item">Жилеты</li>
-          <li className="item">Рубашки</li>
+          <li className="item" onClick={() => handleCategoryClick("Брюки")}>
+            Брюки
+          </li>
+          <li className="item" onClick={() => handleCategoryClick("Толстовки")}>
+            Толстовки
+          </li>
+          <li className="item" onClick={() => handleCategoryClick("Поло")}>
+            Поло
+          </li>
+          <li className="item" onClick={() => handleCategoryClick("Жилеты")}>
+            Жилеты
+          </li>
+          <li className="item" onClick={() => handleCategoryClick("Рубашки")}>
+            Рубашки
+          </li>
         </ul>
       </div>
     </div>

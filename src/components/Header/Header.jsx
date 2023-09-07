@@ -10,24 +10,26 @@ import { DropDown } from "../DropDown/DropDown";
 import { Link, useNavigate } from "react-router-dom";
 
 export const Header = () => {
-  const visible = useSelector((state) => state.app.visible);
-  const [value, setValue] = useState("");
-
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const location = window.location.href;
-  const isAuth = useSelector((state) => state.userStatus.user);
-
+  const [value, setValue] = useState("");
   const [dropdownVisible, setDropdownVisible] = useState(false);
+ 
+  const location = window.location.href;
+  const isAuth = useSelector((state) => state.userStatus.user);     //в зависимости от авторизации показть ему избранное
 
-  const handleDropdownClick = () => {
+ 
+
+  const handleDropdownClick = () => {     //скрытие появление выпадающего окна
     setDropdownVisible(!dropdownVisible);
   };
-  useEffect(() => {
+
+  useEffect(() => {   //следим где мы были 
     dispatch(backUpNavigation(location));
   }, [location]);
 
-  const handleInputChange = (e) => {
+
+  const handleInputChange = (e) => {    //Поиск с инпута нужного товара  и переход к нему
     setValue(e.target.value);
   };
   const handleKeyUp = (e) => {

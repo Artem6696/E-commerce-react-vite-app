@@ -19,6 +19,7 @@ export const ProductsPage = ({ catalogProductList }) => {
   const handleCategoryChange = (category) => {
     dispatch(setSelectedCategory(category));
   };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,7 +38,6 @@ export const ProductsPage = ({ catalogProductList }) => {
         console.error("Ошибка при получении данных:", error);
       }
     };
-
     fetchData();
   }, [selectedCategory, catalogProductList]);
 

@@ -8,12 +8,15 @@ import configAPI from "../utils/configAPI";
 import { setUser } from "../redux/slice/userSlice";
 
 export const Auth = () => {
- 
+
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const backUp = useSelector((state) => state.app.page);
-  const dispatch = useDispatch()
+
   const [errorLogin, setErrorLogIn] = useState(false)
   const [succesLogin, setSuccesLogin] = useState(false)
+  
   const [formData, setFormData] = useState({
     login: "",
     password: "",

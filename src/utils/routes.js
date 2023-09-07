@@ -4,9 +4,8 @@ import { Register } from "../pages/Register";
 import { Auth } from "../pages/Auth";
 import { Basket } from "../pages/Basket";
 import { ProductPage } from "../pages/ProductPage";
-import { Store } from "../pages/Store";
 import {
-  ADMIN_ROUTE,
+  // ADMIN_ROUTE,
   BASKET_ROUTE,
   CATALOG_ROUTE,
   LANDING_PAGE,
@@ -20,16 +19,16 @@ import {
 import { ProductsSearch } from "../pages/ProductsSearch";
 import { Favorite } from "../pages/Favorite";
 
-export const authRoutes = [
-  {
-    path: ADMIN_ROUTE,
-    Component: Register,
-  },
-  {
-    path: BASKET_ROUTE,
-    Component: Basket,
-  },
-];
+// export const authRoutes = [
+//   {
+//     path: ADMIN_ROUTE,
+//     Component: Register,
+//   },
+//   {
+//     path: BASKET_ROUTE,
+//     Component: Basket,
+//   },
+// ];
 
 export const publickRoutes = [
   

@@ -24,7 +24,7 @@
 
     @media (min-width: 1425px) {
         .dropdown-menu {
-          right: 143px; /* Измените значение по вашему усмотрению */
+          right: 143px; 
         }
       }
       @media (min-width: 1920px) {
@@ -47,7 +47,7 @@
        
         position: relative;
         width: 230px;
-        // height: 239px;
+    
         background: #FFFDF5;
       }
     }
@@ -74,6 +74,7 @@
       font-weight: lighter;
     }
     .avatar {
+      cursor: pointer;
       margin-left: 8%;
       .avatar-img {
         height: 24px;
@@ -84,6 +85,7 @@
        }
     }
     .favorite {
+      cursor: pointer;
       margin-left: 2%;
       .favorite-img {
         height: 24px;
@@ -94,6 +96,7 @@
        }
     }
     .busket {
+      cursor: pointer;
       margin-left: 2%;
       .busket-img {
         height: 24px;

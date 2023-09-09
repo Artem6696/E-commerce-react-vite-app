@@ -1,0 +1,24 @@
+
+.wrapper-error{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    min-height: 1500px;
+    overflow: hidden;
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    .content{
+        .img-container{
+           
+            display: flex;
+            justify-content:end;
+            .img{
+                margin-top: 100px;
+                        width: 80%;
+                        
+            }
+        }
+    }
+}

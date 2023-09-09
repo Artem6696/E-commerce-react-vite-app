@@ -13,11 +13,13 @@ import {
   PRODUCT_ROOUTE,
   REGISTRATION_ROUTE,
   PRODUCT_SEARCH,
-  FAVORITE_ROUTE
+  FAVORITE_ROUTE,
+  ERROR_ROUTE
   
 } from "./consts";
 import { ProductsSearch } from "../pages/ProductsSearch";
 import { Favorite } from "../pages/Favorite";
+import { ErrorPage } from "../pages/ErrorPage";
 
 // export const authRoutes = [
 //   {
@@ -63,5 +65,9 @@ export const publickRoutes = [
   {
     path: FAVORITE_ROUTE,
     Component: Favorite
+  },
+  {
+    path: ERROR_ROUTE,
+    Component: ErrorPage
   }
 ];

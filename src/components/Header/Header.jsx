@@ -13,30 +13,38 @@ export const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [value, setValue] = useState("");
-  const [dropdownVisible, setDropdownVisible] = useState(false);
- 
+  const [emptyValue, setEmptyValue] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState();
+
   const location = window.location.href;
-  const isAuth = useSelector((state) => state.userStatus.user);     //в зависимости от авторизации показть ему избранное
+  const isAuth = useSelector((state) => state.userStatus.user); //в зависимости от авторизации показть ему избранное
 
- 
-
-  const handleDropdownClick = () => {     //скрытие появление выпадающего окна
+  const handleDropdownClick = () => {
+    //скрытие появление выпадающего окна
     setDropdownVisible(!dropdownVisible);
   };
 
-  useEffect(() => {   //следим где мы были 
+  useEffect(() => {
+    //следим где мы были
     dispatch(backUpNavigation(location));
   }, [location]);
 
+  useEffect(() => {
+    dispatch(backUpNavigation(location));
+  }, [location]);
 
-  const handleInputChange = (e) => {    //Поиск с инпута нужного товара  и переход к нему
-    setValue(e.target.value);
+  const handleInputChange = (e) => {
+    const inputValue = e.target.value;
+    setValue(inputValue);
+    setEmptyValue(inputValue.trim() === "");
   };
+
   const handleKeyUp = (e) => {
     if (e.key === "Enter") {
       navigate("/searchProducts/" + value);
     }
   };
+
   return (
     <div className="header">
       <div className="left-side">
@@ -64,6 +72,7 @@ export const Header = () => {
       </div>
 
       <div className="right-side">
+        {/* {emptyValue && <p className="message-input">поле не должно быть пустым</p>} */}
         <div className="search">
           <Link to={"/searchProducts/" + value}>
             <svg
@@ -90,10 +99,11 @@ export const Header = () => {
           value={value}
           onChange={handleInputChange}
           onKeyUp={handleKeyUp}
-          className="input"
+          className={`input ${emptyValue ? "empty" : ""}`}
           type="text"
           placeholder="поиск"
         />
+        {emptyValue && <p className="message-input">не должно быть пустым!</p>}
         <div
           className={`avatar ${dropdownVisible ? "dropdown-visible" : ""}`}
           onClick={(e) => {
@@ -131,7 +141,7 @@ export const Header = () => {
             )}
           </div>
         </div>
-        <div className="favorite" onClick={() => navigate('/favorite')}>
+        <div className="favorite" onClick={() => navigate("/favorite")}>
           <svg
             className="favorite-img"
             xmlns="http://www.w3.org/2000/svg"

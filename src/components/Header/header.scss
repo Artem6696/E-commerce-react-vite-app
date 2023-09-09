@@ -17,6 +17,11 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+    .message-input{
+      color: red;
+      width: 270px;
+      margin-left: 10px;
+    }
     .search-img {
       height: 24px;
       width: 24px;

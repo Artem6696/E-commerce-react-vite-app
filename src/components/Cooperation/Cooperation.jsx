@@ -1,5 +1,5 @@
-import React from 'react'
-import './cooperation.scss'
+import React from "react";
+import "./cooperation.scss";
 export const Cooperation = () => {
   return (
     <div className="cooperation">
@@ -66,4 +66,4 @@ export const Cooperation = () => {
       </div>
     </div>
   );
-}
+};

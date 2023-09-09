@@ -11,8 +11,7 @@
   z-index: 999;
 
   .content {
-    /* Уменьшите ширину модального окна */
-    height: auto; /* Уберите фиксированную высоту */
+    height: auto;
     background-color: aliceblue;
     border-radius: 5px;
     padding: 20px;
@@ -38,17 +37,16 @@
         font-size: 40px;
         font-style: normal;
         font-weight: 300;
-        line-height: 87.305%; /* 34.922px */
+        line-height: 87.305%;
       }
-     
+
       .text-contact {
         color: #121212;
         font-family: "Roboto";
         font-size: 16px;
         font-style: normal;
         font-weight: 300;
-        line-height: 118%; /* 18.88px */
-        
+        line-height: 118%;
       }
       .gratitude {
         color: #514a7e;
@@ -56,76 +54,66 @@
         font-size: 40px;
         font-style: normal;
         font-weight: 400;
-        line-height: 87.305%; /* 34.922px */
+        line-height: 87.305%;
         margin-left: 450px;
       }
-      .user-info{
+      .user-info {
         width: 350px;
         margin: 0;
         font-family: "Roboto";
         font-size: 12px;
         color: #8a8282;
-        .email{
-            color: #514a7e;
+        .email {
+          color: #514a7e;
         }
       }
 
       @media (min-width: 1425px) {
-        .btn-close{
-        
-            margin-top: 15px;
-            margin-left: 1050px;
+        .btn-close {
+          margin-top: 15px;
+          margin-left: 1050px;
           display: block;
           z-index: 9999;
-          .circle{
-            
+          .circle {
           }
-            .line{
-    
-                position: absolute;
-                top: 280px;
-                right: 178px;
-            }
-          }
-          .elem-order{
+          .line {
             position: absolute;
-            width: 197px;
-           right: 132px;
-
-transform: rotate(2.351deg);
+            top: 280px;
+            right: 178px;
           }
+        }
+        .elem-order {
+          position: absolute;
+          width: 197px;
+          right: 132px;
+
+          transform: rotate(2.351deg);
+        }
       }
 
-
-
       @media (min-width: 1920px) {
-        .btn-close{
-        
-            margin-top: 15px;
+        .btn-close {
+          margin-top: 15px;
           margin-left: 1485px;
           display: block;
           z-index: 9999;
-          .circle{
-            
+          .circle {
           }
-            .line{
-    
-                position: absolute;
-                top: 387px;
-                right: 200px;
-            }
-          }
-          .elem-order{
+          .line {
             position: absolute;
-            width: 197px;
-            right: 178px;
-           
-
-transform: rotate(2.351deg);
+            top: 387px;
+            right: 200px;
           }
-          
+        }
+        .elem-order {
+          position: absolute;
+          width: 197px;
+          right: 178px;
+
+          transform: rotate(2.351deg);
+        }
       }
-      .btn-close :active{
+      .btn-close :active {
         transform: scale(1.2);
       }
     }

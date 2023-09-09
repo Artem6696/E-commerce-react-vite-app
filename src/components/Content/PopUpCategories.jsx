@@ -1,19 +1,19 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import "./PopUpCategories.scss";
-import {  useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export const PopUpCategories = ({ onCategoryChange, style }) => {
   const navigate = useNavigate();
-  
+
   const visible = useSelector((state) => state.app.visible);
-  
+
   const handleCategoryClick = (category) => {
     navigate("/catalog/" + category);
     onCategoryChange(category);
   };
-  
+
   return (
     <div
       style={style}

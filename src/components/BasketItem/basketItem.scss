@@ -4,15 +4,11 @@
   flex-direction: row;
   width: 80%;
   @media (min-width: 1425px) {
-  
-      margin-left: 202px;
-
+    margin-left: 202px;
   }
   @media (min-width: 1920px) {
-  
     margin-left: 275px;
-
-}
+  }
   .basket-item_img {
     width: 20%;
     .img {
@@ -24,7 +20,7 @@
   }
   .box-info {
     width: 400px;
-    .link{
+    .link {
       text-decoration: none;
     }
     .name {
@@ -34,13 +30,13 @@
       font-style: normal;
       font-weight: 400;
       line-height: 118%;
-      transition: transform 0.5s 
+      transition: transform 0.5s;
     }
-    .name:hover{
+    .name:hover {
       transition: 0.3s;
       transform: scale(1.07);
       color: #514a7e;
-  }
+    }
     .id {
       color: #756666;
       font-family: Roboto;
@@ -90,18 +86,19 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 118%; 
+        line-height: 118%;
         user-select: none;
       }
-      .increment, .decrement{
+      .increment,
+      .decrement {
         cursor: pointer;
       }
-      .increment-svg:active{
-        transform: scale(1.30);
-       }
-       .decrement-svg:active{
-        transform: scale(1.30);
-       }
+      .increment-svg:active {
+        transform: scale(1.3);
+      }
+      .decrement-svg:active {
+        transform: scale(1.3);
+      }
     }
     .box-favorite-remove {
       margin-top: 24px;
@@ -124,10 +121,9 @@
           margin-right: 8px;
           padding-top: 14px;
         }
-        .favorite:active{
+        .favorite:active {
           transform: scale(1.1);
-         }
-
+        }
       }
       .remove-box {
         cursor: pointer;
@@ -143,16 +139,16 @@
           font-weight: 300;
           line-height: 118%;
         }
-        .remove:active{
+        .remove:active {
           transform: scale(1.1);
-         }
+        }
         .svg {
           margin-right: 5px;
           padding-top: 14px;
         }
-        .svg:active{
-          transform: scale(1.30);
-         }
+        .svg:active {
+          transform: scale(1.3);
+        }
       }
     }
   }
@@ -182,7 +178,7 @@
       font-size: 20px;
     }
     .ship-info {
-        display: flex;
+      display: flex;
       .info {
         user-select: none;
         color: #514a7e;
@@ -192,9 +188,8 @@
         font-weight: 300;
         line-height: 118%; /* 16.52px */
       }
-      .svg{
+      .svg {
         padding-top: 18px;
-
       }
     }
   }

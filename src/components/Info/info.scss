@@ -1,86 +1,84 @@
-.info{
-    width: 80%;
-   .title-box{
-        margin-top: 30%;
-       
-    .title{
-        color: #121212;
-        margin: 0;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 87.305%;
+.info {
+  width: 80%;
+  .title-box {
+    margin-top: 30%;
+
+    .title {
+      color: #121212;
+      margin: 0;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 87.305%;
     }
-   }
-   .nav {
+  }
+  .nav {
     margin: 0;
-    .nav-button{
-        position: relative;
-        top: 300px;
+    .nav-button {
+      position: relative;
+      top: 300px;
     }
     .nav-button:active {
-        transform: scale(1.2); 
+      transform: scale(1.2);
     }
-   }
-  
-   .about-box-top{
+  }
+
+  .about-box-top {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-bottom: 50px;
-    
-    .about-ecllipse{
-        display: flex;
-        flex-direction: row;
-       }
-    .about{
-        width: 150px;
-        color: #7D7D7D;
 
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 118%;
+    .about-ecllipse {
+      display: flex;
+      flex-direction: row;
     }
-   }
-   .about-box-bottom{
-    
+    .about {
+      width: 150px;
+      color: #7d7d7d;
+
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 118%;
+    }
+  }
+  .about-box-bottom {
     display: flex;
     flex-direction: row;
-justify-content: space-around;
-    .about{
-        width: 175px;
-        color: #7D7D7D;
+    justify-content: space-around;
+    .about {
+      width: 175px;
+      color: #7d7d7d;
 
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 118%;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 118%;
     }
-   }
-   .about-eclipse{
+  }
+  .about-eclipse {
     position: relative;
     display: flex;
     flex-direction: row;
-        .img1{
-            position: relative;
-            top: 23px;
-            right: 50px;
-        }
-        .img2{
-            position: relative;
-            bottom: 25px;
-        }
-        .img3{
-            position: relative;
-            top: 25px;
-            right: 40px;
-        }
-        .img4{
-            position: relative;
-            bottom: 10px;
-            right: 20px;
-        }
-   }
-
+    .img1 {
+      position: relative;
+      top: 23px;
+      right: 50px;
+    }
+    .img2 {
+      position: relative;
+      bottom: 25px;
+    }
+    .img3 {
+      position: relative;
+      top: 25px;
+      right: 40px;
+    }
+    .img4 {
+      position: relative;
+      bottom: 10px;
+      right: 20px;
+    }
+  }
 }

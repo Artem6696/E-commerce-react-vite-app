@@ -26,7 +26,7 @@ export const Catalog = () => {
     setCurrentPage(currentPage + 1);
     window.scrollTo({
       top: 0,
-      behavior: "smooth", 
+      behavior: "smooth",
     });
   };
 

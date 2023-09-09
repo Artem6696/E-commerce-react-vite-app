@@ -1,91 +1,90 @@
-.feedback{
-    width: 80%;
-    margin-bottom: 150px;
-    .text{
-        color: #121212;
-        font-family: "Roboto";
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 87.305%;
-        margin-bottom: 5%;
+.feedback {
+  width: 80%;
+  margin-bottom: 150px;
+  .text {
+    color: #121212;
+    font-family: "Roboto";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+    margin-bottom: 5%;
+  }
+  .feedbox-container {
+    display: flex;
+    gap: 5%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .feedback-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 459px;
+    height: 204px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    .feedback-img {
     }
-    .feedbox-container{
-        display: flex;
-        gap: 5%;
-        justify-content:flex-start;
-        align-items: center;
+  }
+  .feedback-description {
+    align-items: center;
+    margin-left: 45px;
+    .rating-img {
+      width: 20px;
     }
-    .feedback-box{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 459px;
-        height: 204px;
-        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-        .feedback-img{
-
-        }
-    }
-    .feedback-description{
-        align-items: center;
-        margin-left: 45px;
-        .rating-img{
-            width: 20px;
-        }
-        .title{
-            width: 263px;
-            height: 70px;
-            .text{
-                margin-top: 30px;
-                color: #7D7D7D;
-            font-family: "Roboto";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 170%; 
-            }
-        }
-        .bottom-box{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            .name{
-                color: #121212;
-                font-family: "Roboto";
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 170%;
-            }
-            .date{
-                color: #514A7E;
-                font-family: "Roboto";
-                font-size: 12px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 170%; 
-            }
-        }
-    }
-    .add-feedback{
-        margin-top: 5%;
-        display: flex;
-        width: 148px;
-        height: 37px;
-        background-color: #514A7E;
-        color: #FFFDF5;
+    .title {
+      width: 263px;
+      height: 70px;
+      .text {
+        margin-top: 30px;
+        color: #7d7d7d;
         font-family: "Roboto";
         font-size: 14px;
         font-style: normal;
+        font-weight: 300;
+        line-height: 170%;
+      }
+    }
+    .bottom-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .name {
+        color: #121212;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-style: normal;
         font-weight: 400;
-        line-height: normal;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        user-select: none;
+        line-height: 170%;
+      }
+      .date {
+        color: #514a7e;
+        font-family: "Roboto";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+      }
     }
-    .add-feedback:active{
-        transform: scale(1.1);
-    }
+  }
+  .add-feedback {
+    margin-top: 5%;
+    display: flex;
+    width: 148px;
+    height: 37px;
+    background-color: #514a7e;
+    color: #fffdf5;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  .add-feedback:active {
+    transform: scale(1.1);
+  }
 }
